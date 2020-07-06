@@ -1,6 +1,6 @@
 package sfgpetclinic;
 
-import com.springframeworksfgpetclinic.SfgPetClinicApplication;
+import com.springframework.sfgpetclinic.SfgPetClinicApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

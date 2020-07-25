@@ -7,6 +7,9 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Created by jt on 7/13/18.
+ */
 @Setter
 @Getter
 @NoArgsConstructor
@@ -14,7 +17,7 @@ import java.util.Set;
 @Builder
 @Entity
 @Table(name = "pets")
-public class Pet extends BaseEntity {
+public class Pet extends BaseEntity{
 
     @Column(name = "name")
     private String name;
@@ -31,6 +34,6 @@ public class Pet extends BaseEntity {
     private LocalDate birthDate;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
-    private Set<Visit> visits = new HashSet<>();
+    private Set<Visit> vists = new HashSet<>();
 
 }
